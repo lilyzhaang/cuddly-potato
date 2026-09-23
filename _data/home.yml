@@ -1,0 +1,18 @@
+hero_tag: "personal site — est. 2026"
+hero_title: "hi, i build things and write them down."
+hero_body: >
+  This is a small corner of the web for my work and my notes.
+  No tracking, no feed algorithm — just a page that grows when I add something to it.
+initials: "YN"
+about_intro: "A short line about who you are and what you're currently focused on — one or two sentences, written like you'd say it out loud."
+resume:
+  - when: "2024—now"
+    what: "Senior Something, Company Name"
+    note: "What you actually do there, in plain words."
+  - when: "2021—2024"
+    what: "Previous Role, Other Company"
+    note: "One line on the scope or a notable outcome."
+  - when: "2017—2021"
+    what: "BA/BS Your Field, University"
+    note: "Honors or focus, if worth mentioning."
+tags: ["javascript", "design systems", "writing", "ceramics", "running"]

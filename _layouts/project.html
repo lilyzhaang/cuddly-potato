@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="wrap">
+  <a href="{{ '/' | relative_url }}#projects" class="mono back-link">← back to projects</a>
+  <div class="section-head"><span class="num mono">02</span><h2>{{ page.title }}</h2></div>
+  <div class="detail-win">
+    <div class="win-bar"><span>{{ page.slug }}</span><div class="dots"><i></i><i></i><i></i></div></div>
+    <div class="win-body">
+      <div class="detail-meta mono">
+        <span>{{ page.year }}</span><span>{{ page.role }}</span><span>{{ page.status }}</span>
+      </div>
+      <p>{{ page.summary }}</p>
+      <div class="article-body">{{ content }}</div>
+      <div class="taglist">
+        {% for s in page.stack %}<span class="t">{{ s }}</span>{% endfor %}
+      </div>
+      <div class="detail-links mono">
+        {% for l in page.links %}<a href="{{ l.url }}">{{ l.label }} →</a>{% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
