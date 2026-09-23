@@ -1,0 +1,18 @@
+---
+layout: default
+title: YOUR NAME — musings
+---
+<div class="page-head wrap">
+  <div class="tag mono">03 / musings</div>
+  <h1>notes, essays, photos.</h1>
+  <p>Everything that isn't a project or a resume line lives here — an index, newest at the top. Click a title to read the full piece.</p>
+</div>
+<div class="listing wrap">
+  {% for post in site.posts %}
+  <div class="row">
+    <div class="date">{{ post.date | date: "%Y.%m.%d" }}</div>
+    <div class="title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.note %}<small>{{ post.note }}</small>{% endif %}</div>
+    <div class="kind">{{ post.kind }}</div>
+  </div>
+  {% endfor %}
+</div>

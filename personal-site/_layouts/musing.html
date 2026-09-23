@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="article">
+  <a href="{{ '/musings.html' | relative_url }}" class="mono back-link">← back to musings</a>
+  <div class="section-head"><span class="num mono">03</span><h2>{{ page.title }}</h2></div>
+  <div class="detail-meta mono">
+    <span>{{ page.date | date: "%Y.%m.%d" }}</span>
+    <span>{{ page.kind }}</span>
+  </div>
+  <div class="article-body">
+    {{ content }}
+  </div>
+</article>
